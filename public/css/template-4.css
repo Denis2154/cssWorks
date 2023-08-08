@@ -1,0 +1,226 @@
+:root {
+    --space-m: 12px;
+    --space-xm: 16px;
+    --space-l: 24px;
+    --space-b: 80px;
+    
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+
+     --color-border:  #DEE2E6;
+     --color-primary: rgb(46, 46, 255);
+     --color-white: #FFFFFF;
+     --color-title: #212529;
+     --color-text: #343A40;
+
+     --border-radius: 12px;
+
+     --weight-title: 500;
+     --weight-text: 400;
+}
+
+
+
+/*=============*/
+.page {
+    background: var(--color-white);
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: center;
+}
+.page_content {
+    max-width: 1000px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+}
+
+/*=============*/
+
+
+.header {
+  padding: var(--space-l) 0;
+  border-bottom: 1px solid var(--color-border);
+
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+    font-size: 17px;
+    color: var(--color-white);
+    background: var(--color-primary);
+    width: 24px;
+    height: 24px;
+    border-radius: calc(var(--border-radius)/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+display: flex;
+} 
+.nav_inline {
+    display: flex;
+    gap: var(--space-l);
+}
+.nav_vertical {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xm);
+}
+.nav_link {
+color: var(--color-text);
+font-size: var(--size-d);
+text-decoration: none;
+display: flex;
+gap: var(--space-m);
+line-height: 100%;
+}
+.nav_link:hover {
+text-decoration: underline;
+color: var(--color-primary);
+}
+.footer {
+    padding: var(--space-l) 0;
+    border-top: 1px solid var(--color-border);
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: var(--space-m);
+}
+.footer_copyright {
+    font-size: var(--size-s);
+    color: var(--color-text);
+    display: flex;
+    margin-top: var(--space-l);
+}
+.footer_title {
+    font-size: var(--size-l);
+    color: var(--color-title);
+    display: flex;
+    margin-bottom: var(--space-l);
+    font-weight: var(--weight-title);
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-b);
+}
+.main_image {
+    width: 500px;
+    height: 500px;
+    border-radius: var(--border-radius);
+}
+.main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-l);
+}
+.main_title {
+font-family: Roboto;
+font-size: 36px;
+font-weight: var(--weight-title);
+line-height: 43px;
+gap: var(--space-l);
+}
+.main_text {
+font-family: Roboto;
+font-size: var(--space-xm);
+font-weight: var(--weight-text);
+line-height: 27px;
+}
+.main_button {
+    width: 119px;
+    text-decoration: none;
+    font-weight: var(--weight-text);
+    border: 1px solid #6C757D; 
+    border-radius: 4px;
+    background-color: #6C757D;
+    display: inline-block;
+    padding: var(--space-m) var(--space-xm);
+    color: #FFFFFF;
+}
+.main_button_text {
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: var(--weight-text);
+    text-align: center;
+}
+.featured_box {
+display: flex;
+border-bottom: 1px solid var(--color-border);
+}
+.featured_card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 333.33px;
+    height: 332px;
+    padding: 0px 26px;
+    gap: 24px;
+}
+.featured_card_image {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+}
+.featured_card_title {
+    display: flex;
+    font-family: Roboto;
+    font-size: 31px;
+    font-weight: var(--weight-title);
+}
+.featured_card_text {
+    display: flex;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: var(--weight-text);
+    width: 288px;
+    height: 108px;
+    color: #212529;
+    line-height: 170%;
+}
+.featured_card_button {
+    display: flex;
+    gap: 40px;
+    color: #0D6EFD;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: var(--weight-text);
+    line-height: 16px;
+}
+.actions_form {
+    display: flex;
+    background-color: #563D7C;
+    height: 129px;
+    border-radius: 8px;
+    padding: 24px;
+    gap: 116px;
+}
+.actions_form_block {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: var(--weight-text);
+    gap: 10px;
+}
+.actions_form_button {
+    color: #212529;
+    width: 240px;
+    height: 52px;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
